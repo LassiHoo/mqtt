@@ -1,1 +1,1 @@
-# homeAutomation
+# Mqtt assingment for Kempower
