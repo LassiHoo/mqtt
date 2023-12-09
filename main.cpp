@@ -1,5 +1,5 @@
 #include <iostream>
-#include "homeAutomationConfig.h"
+#include "Config.h"
 #include "libs/cxxopts/include/cxxopts.hpp"
 #include <plog/Log.h>
 #include <plog/Init.h>
@@ -31,9 +31,9 @@ void setDebugLevel(std::string &level)
 int main (int arc, char **argv)
 {
     std::string debug_level = "NONE";
-    cxxopts::Options options("Home automation","home automation application");
-    PLOG_DEBUG<<"version minor: "<<homeAutomation_VERSION_MINOR;
-    PLOG_DEBUG<<"version major: "<<homeAutomation_VERSION_MAJOR;
+    cxxopts::Options options("Mqtt ","home automation application");
+    PLOG_DEBUG<<"version minor: "<<mqtt_VERSION_MINOR;
+    PLOG_DEBUG<<"version major: "<<mqtt_VERSION_MAJOR;
     options.add_options()
     ("d, level","debug level: DEBUG, ERROR, VERBOSE" , cxxopts::value<std::string>())
     ("h, help","");

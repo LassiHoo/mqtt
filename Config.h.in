@@ -1,2 +1,2 @@
-#define homeAutomation_VERSION_MAJOR @homeAutomation_VERSION_MAJOR@
-#define homeAutomation_VERSION_MINOR @homeAutomation_VERSION_MINOR@
+#define mqtt_VERSION_MAJOR @mqtt_VERSION_MAJOR@
+#define mqtt_VERSION_MINOR @mqtt_VERSION_MINOR@
