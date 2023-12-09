@@ -1,0 +1,2 @@
+#define homeAutomation_VERSION_MAJOR @homeAutomation_VERSION_MAJOR@
+#define homeAutomation_VERSION_MINOR @homeAutomation_VERSION_MINOR@
