@@ -2,9 +2,19 @@
 It is recommended to use the latest Ubuntu version
 
 ## installing the compiler and make
-'''
+```
 sudo apt-get update
-'''
-'''
-sudp apt-get- install build-essential
-'''
+```
+```
+sudo apt-get install build-essential
+```
+```
+sudo apt install cmake
+```
+
+## compiling the mqtt application
+
+```
+mkdir -p build && cd build && cmake .. && make
+```
+
