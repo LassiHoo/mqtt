@@ -6,5 +6,5 @@ It is recommended to use the latest Ubuntu version
 sudo apt-get update
 ```
 ```
-sudp apt-get- install build-essential
+sudo apt-get- install build-essential
 ```
