@@ -15,6 +15,6 @@ sudo apt install cmake
 ## compiling the mqtt application
 
 ```
-mkdir -p buid && cd build && cmake .. && make
+mkdir -p build && cd build && cmake .. && make
 ```
 
