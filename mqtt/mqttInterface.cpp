@@ -1,8 +1,17 @@
 #include "mqttInterface.hpp"
 
+#include <plog/Log.h>
+#include <plog/Init.h>
+#include <plog/Formatters/TxtFormatter.h>
+#include <plog/Appenders/ColorConsoleAppender.h>
+
 
 
 mqttInterface::mqttInterface(const string serverAddress, const string clientId): _cli(serverAddress,clientId)
+{
+}
+
+mqttInterface::~mqttInterface()
 {
 }
 

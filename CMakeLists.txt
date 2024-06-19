@@ -8,6 +8,7 @@ find_library(PAHO_C_LIB paho-mqtt3as)
 add_executable(mqtt main.cpp mqtt/mqttInterface.cpp)
 add_subdirectory(libs/cxxopts)
 include_directories(libs/plog/include)
+include_directories(mqtt)
 target_include_directories(mqtt PUBLIC 
                         "${PROJECT_BINARY_DIR}"
                         "${PROJECT_BINARY_DIR}/libs/cxxopts")

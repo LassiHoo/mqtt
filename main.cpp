@@ -5,6 +5,7 @@
 #include <plog/Init.h>
 #include <plog/Formatters/TxtFormatter.h>
 #include <plog/Appenders/ColorConsoleAppender.h>
+#include "mqttInterface.hpp"
 
 void setDebugLevel(std::string &level)
 {
@@ -32,6 +33,7 @@ int main (int arc, char **argv)
 {
     std::string debug_level = "NONE";
     cxxopts::Options options("Mqtt ","home automation application");
+    
     PLOG_DEBUG<<"version minor: "<<mqtt_VERSION_MINOR;
     PLOG_DEBUG<<"version major: "<<mqtt_VERSION_MAJOR;
     options.add_options()
@@ -48,5 +50,7 @@ int main (int arc, char **argv)
       exit(0);
     }
     PLOG_DEBUG<<"starting the application";
+    mqttInterface mqttClient(SERVER_ADDRESS,CLIENT_ID);
+    mqttClient.run();
     return 0;
 }
