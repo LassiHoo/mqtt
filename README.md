@@ -81,7 +81,7 @@ sudo cmake --build build/ --target install
 mkdir -p build && cd build && cmake .. && make
 
 
-## setting up the mqtt broket
+## setting up the mqtt broker
 
 sudo apt update 
 
